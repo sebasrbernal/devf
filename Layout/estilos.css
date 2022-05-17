@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+ box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    background-color: rgba(65, 225, 190, 0.623);
+    text-align: center;
+    font-size: 50px;
+}
+
+.main{
+    text-align: center;
+    width: 70%;
+    background-color: rgb(226, 19, 181);
+    display: inline-block;
+    padding: 219.5px 100px;
+}
+
+.right_panel{
+    float: right;
+    text-align: center;
+    width: 30%;
+    background-color: rgb(187, 255, 0);
+    padding: 300px 100px;
+    
+}
+
+.footer{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(123, 255, 71);
+    padding: 30px;
+}
+
+.img1{
+    width: 125px;
+    height: 125px;
+}
+.img2{
+    width: 125px;
+    height: 125px;
+}

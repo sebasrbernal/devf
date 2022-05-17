@@ -1,0 +1,29 @@
+nav{
+    background-color:aquamarine;
+    display: grid;
+    height: 60px;
+    justify-content: space-between; /* acomodar hacia un lado*/
+    grid-template-areas: "menu iconos";
+}
+.nav_menu{
+    align-items: center;
+    display: grid;
+    grid-area: menu;
+    margin-left: 10px;
+    grid-template-columns: repeat(2,40px);
+
+}
+
+.iconos{
+    align-items: center;
+    display: grid;
+    grid-area: iconos;
+    grid-template-columns: repeat(3,50px);
+}
+img{
+    margin-left: 10px;
+    width: 30px;
+}
+p{
+    margin-left: 10px;
+}

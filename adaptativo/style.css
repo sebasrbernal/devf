@@ -1,0 +1,53 @@
+.container> *{
+    border: 2px solid red;
+    margin: .5rem;/*rem 16 px*/
+    padding: 1rem;
+/*checar footer*/
+}
+
+.container{
+    display: grid;
+    
+    grid-template-areas: 
+    "header header" 
+    "aside aside" 
+    "main main"
+    "footer footer";
+}
+
+@media screen and (min-width:700px) and (max-width:1000px) {
+    .container{
+        grid-template-areas: 
+        "header header"
+        "aside main"
+        "footer";
+    }
+    header{
+        background-color: blueviolet;
+    }
+}
+@media screen and (min-width:1000px) {
+    .container{
+        grid-template-areas: 
+        "header"
+        "aside main"
+        "footer";
+    }
+    main{
+        background-color: aqua;
+    }
+    
+}
+
+header{
+    grid-area: header;
+}
+aside{
+    grid-area: aside;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}

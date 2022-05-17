@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+ box-sizing: border-box;
+}
+/* modificador general */
+*{
+    outline: 1px solid red;
+    background-color: #2cb7da;
+}
+
+
+h1{
+    color: aquamarine;
+    /* alinear el texto */      
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.first{
+    color: brown;
+    font-family: cursive;
+}
+
+#main{
+    color: crimson;
+    font-size: x-large;
+    font-family: fantasy;
+    font-style: italic;
+}
+
+.second{
+    color: darkgreen;
+
+}
+
+.otherClass{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article p::first-line{
+    font-size: 120%;
+    color: blue;
+
+}
+p::first-letter{
+    color: rgb(134, 241, 71);
+}
+
+.tarjeta{
+    width: 200px;height: 150px; background-color: darkblue;
+}
+
+.tarjeta:hover{
+background-color: darkgreen;
+}
+
+.box1{
+    width: 150px;
+    height: 170px;
+    padding: 5px;
+    border: 2px solid rgb(0, 255, 170);
+    float: right;
+    
+    /*box-sizing: border-box;*/
+}
+.box2{
+    display: block;
+}

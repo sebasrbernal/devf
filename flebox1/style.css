@@ -1,0 +1,26 @@
+.flexcontainer{
+    display: flex;
+    /* forma de comlumnas*/
+    /*flex-direction: column;*/
+    /* distribución uniforme*/
+    /*justify-content: space-around;*/
+    /*distribucion en la hoja justify-content:;*/
+    /*se van acomodando en fila 
+    conforme se haga mas pequeño dependiendo del 
+    espacio dispoinible flex-wrap: wrap o wrap-reverse pero 
+    sentido contrario */
+    flex-grow: 1;
+    border: 2px solid;
+    
+}
+.flexitem1{
+    background-color: rgb(181, 24, 212);
+}
+
+.flexitem2{
+    background-color: rgb(73, 216, 7);
+}
+
+.flexitem3{
+    background-color: rgb(21, 196, 196);
+}

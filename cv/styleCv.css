@@ -1,0 +1,22 @@
+*{
+    outline: 1px solid red;
+    background-color: #2cb7da;
+}
+h1{
+    color: rgb(41, 221, 161);
+    /* alinear el texto */      
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Roboto Mono', monospace;
+}
+h2{
+    color: rgb(189, 6, 6);
+    text-align: center;
+    font-size: 70%;
+    font-family: cursive;
+}
+#Foto{
+    text-align: center;
+    width: 125 px;
+    
+}
