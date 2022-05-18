@@ -1,0 +1,55 @@
+.gridcontainer{
+    display: grid;
+    grid-template-areas: "head head"
+               "main aside" 
+               "foot foot";
+    border: 10px solid rgb(29, 227, 148);
+    background-color: blanchedalmond;
+}
+body{
+    margin: 0px 0px;
+}
+h2{
+    margin: 0px 0px;
+}
+h3{
+    margin: 0px 0px;
+}
+table, th, td {
+    border:1px solid rgb(204, 85, 85);
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px 0px;
+}
+.header{
+    grid-area: head;
+    display: grid;
+    width: 100%;
+    text-align: center;
+    
+    
+}
+.foto{
+    width: 125px;
+    height: 125px;
+    
+}
+
+.main{
+    display: grid;
+    grid-area: main;
+    padding: 1px 1px;
+  
+}
+.aside{
+    grid-area: aside;
+    display: grid;
+    
+}
+
+.footer{
+    grid-area: foot;
+    display: grid;
+    text-align: center;
+}
