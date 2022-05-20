@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: grid;
+    max-width: 1400px;
+    margin:0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    grid-template-areas: 
+    "main"
+    "cte"
+    "imagen1"
+    "acerca"
+    "imagen2";
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.main_hero{
+    grid-area: main;
+    background-image: url(../ProyectoLanding/img/fondo1.jpg);
+    min-height: 550px;
+    background-size: cover;
+    background-position: center;
+}
+.main_nav{
+    display: flex;
+}
+.main_links{
+    display: none;  /*  para que no se vean */
+}
+.main_logo{
+    margin: 0 auto;
+    width: 600px;
+    height: 300px;
+}
+.main_menu{
+    width: 25px;
+    height: 25px;
+}
