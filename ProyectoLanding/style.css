@@ -11,7 +11,7 @@
     grid-template-rows: repeat(5, max-content);
     grid-template-areas: 
     "main"
-    "cte"
+    "cta"
     "imagen1"
     "acerca"
     "imagen2";
@@ -27,7 +27,7 @@
 .main_hero{
     grid-area: main;
     background-image: url(../ProyectoLanding/img/fondo1.jpg);
-    min-height: 550px;
+    min-height: 500px;
     background-size: cover;
     background-position: center;
 }
@@ -35,14 +35,146 @@
     display: flex;
 }
 .main_links{
-    display: none;  /*  para que no se vean */
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    margin-left: 10%;
+}
+
+.main_list{
+    list-style: none;
+}
+
+.main_link{
+    color: rgb(224, 146, 146);
+    text-decoration: none;
 }
 .main_logo{
-    margin: 0 auto;
-    width: 600px;
-    height: 300px;
+    margin: 0 auto;  /* centrar*/
+    width: 150px;
+    height: 75px;
 }
-.main_menu{
-    width: 25px;
-    height: 25px;
+
+.main_controls{
+    grid-area: main;
+    align-self:end;
+    justify-self: end;
+    background-color: rgb(249, 130, 130);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main_control{
+    height: 40%;
+}
+
+.main_costos{
+    grid-area: cta;
+}
+
+.main_content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.main_title{
+    color: black;
+}
+
+.main_parrafo{
+    line-height: 1.5;
+    margin: 1em 0 2em ;
+    color: rgb(98, 95, 95);
+}
+.mian_parrafo_about{
+    margin: 1em 0 0 0;
+}
+
+.main_cta{
+    text-decoration: none;
+    color: rgb(236, 73, 59);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+.main_flecha{
+    margin-left: 20px;
+}
+.main_bg{
+    grid-area: imagen1;
+    min-height: 250px;
+    height: 100%;
+    background-image: url("..//ProyectoLanding/img/Salon.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main_about{
+    grid-area: acerca;
+}
+.main_contactos{
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    margin-left: 10%;
+
+}
+
+.main_bg_about{
+    grid-area: imagen2;
+    background-image: url("../ProyectoLanding/img/img2.jpeg");
+}
+
+@media (min-width:880px){
+    .container{
+        width: 85%;
+        padding: 70px 0;
+    } 
+
+    .main{
+        grid-template-columns: repeat(7,1fr);
+        grid-template-areas:
+         "main main main main cta cta cta"
+         "main main main main cta cta cta"
+         "main main main main cta cta cta"
+         "imagen1 imagen1 acerca acerca acerca imagen2 imagen2"
+         "imagen1 imagen1 acerca acerca acerca imagen2 imagen2"
+        ;
+    }
+    .main_controls{
+        grid-area: cta;
+        justify-self: start;
+    }
+
+    .main_logo{
+        margin: 0;
+        
+    }
+
+    .main_links{
+        padding: 0;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1em;
+        margin-left: 10%;
+    }
+
+    .main_list{
+        list-style: none;
+    }
+
+    .main_link{
+        color: rgb(224, 146, 146);
+        text-decoration: none;
+    }
+
 }
